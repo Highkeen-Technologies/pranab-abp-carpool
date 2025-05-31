@@ -6,8 +6,8 @@ resource "aws_ecs_task_definition" "carpool" {
   family                   = "carpool-task"
   network_mode             = "host"
   requires_compatibilities = ["EC2"]
-  cpu                      = "256"
-  memory                   = "512"
+  cpu                      = "1024"
+  memory                   = "2048"
 
   runtime_platform {
     cpu_architecture        = "ARM64"
